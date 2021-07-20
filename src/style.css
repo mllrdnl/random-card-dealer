@@ -1,1 +1,13 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background-image: linear-gradient(120deg, #000000 0%, #01086b 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.card {
+  height: 450px;
+  width: 250px;
+}
