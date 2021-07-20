@@ -5,9 +5,26 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  font-family: "Uchen", serif;
+}
+
+.container {
+  display: flex;
 }
 
 .card {
-  height: 450px;
-  width: 250px;
+  height: 425px;
+  width: 275px;
+}
+
+.card-center {
+  font-size: 90px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.card-suit {
+  font-size: 75px;
+  display: flex;
 }
