@@ -6,25 +6,79 @@ body {
   background-size: cover;
   height: 100vh;
   font-family: "Uchen", serif;
-}
-
-.container {
-  display: flex;
+  font-size: 90px;
 }
 
 .card {
   height: 425px;
   width: 275px;
-}
-
-.card-center {
-  font-size: 90px;
   display: flex;
+  align-items: center;
   justify-content: center;
-  align-self: center;
+  margin-top: 25px;
+  box-shadow: 1px 1px 1px white, 2px 2px 1px white, 3px 3px 1px gray,
+    4px 4px 1px white, 5px 5px 1px white, 6px 6px 1px gray, 7px 7px 1px white,
+    8px 8px 1px white, 9px 9px 1px gray, 10px 10px 1px white,
+    11px 11px 1px white, 12px 12px 1px gray, 13px 13px 1px white,
+    14px 14px 1px white, 15px 15px 1px gray, 25px 25px 15px rgba(0, 0, 0, 0.3);
 }
 
-.card-suit {
-  font-size: 75px;
-  display: flex;
+.club::before {
+  content: "\2663";
+}
+
+.club::after {
+  content: "\2663";
+}
+
+.heart::before {
+  content: "\2665";
+}
+
+.heart::after {
+  content: "\2665";
+}
+
+.heart,
+.diamond {
+  color: red;
+}
+
+.diamond::before {
+  content: "\2666";
+}
+
+.diamond::after {
+  content: "\2666";
+}
+
+.spade::before {
+  content: "\2660";
+}
+
+.spade::after {
+  content: "\2660";
+}
+
+.heart::before,
+.diamond::before,
+.club::before,
+.spade::before {
+  position: absolute;
+  left: 1.3rem;
+  top: -1.3rem;
+}
+
+.heart::after,
+.diamond::after,
+.club::after,
+.spade::after {
+  position: absolute;
+  right: 1.3rem;
+  bottom: -1.3rem;
+  transform: rotate(180deg);
+}
+
+.card-number {
+  color: black;
 }

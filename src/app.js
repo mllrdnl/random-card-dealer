@@ -8,7 +8,7 @@ import "./assets/img/4geeks.ico";
 window.onload = function() {
   //write your code here
   let cardList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, "J", "Q", "K"];
-  let cardSuitList = ["♦", "♥", "♠", "♣"];
+  let cardSuitList = ["club", "heart", "spade", "diamond"];
 
   const getCard = list => {
     let randomNumber = Math.floor(Math.random() * list.length);
@@ -16,6 +16,6 @@ window.onload = function() {
     return list[randomNumber];
   };
 
-  document.querySelector(".card-center").innerHTML = getCard(cardList);
-  document.querySelector(".card-suit").innerHTML = getCard(cardSuitList);
+  document.querySelector(".card-number").innerHTML = getCard(cardList);
+  document.querySelector(".card-center").classList.add(getCard(cardSuitList));
 };
